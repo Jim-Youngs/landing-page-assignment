@@ -3,53 +3,48 @@
 }
 
 .container-one {
-    display: block;
-    justify-content: flex-end;
-    align-items: flex-start;
-    padding-top: 5px;
-    padding-left: 15%;
-    padding-right: 15%;
+    display: flexbox;
+    padding: 10px;
     height: 600px;
     background-color: #1f2937;
-    gap: 20px;
-
-
 }
 
-nav {
+.nav {
+    flex: 0 1 1;
     display: flex;
+    justify-content: center;
 }
 
-nav div {
+.nav div {
+    flex: 0 1 1;
     display: flex;
-    flex: 1;
-    justify-content: flex-end;
+    justify-content: center;
     padding: 10px;
     font-size: 18px;
     text-align: center;
-    color:#e5e7eb;
+    color: #e5e7eb;
 }
 
-.logo {
-    flex: 0 1 0;
-    margin-right: 60%;
-    padding: 10px;
+.nav .logo {
+    flex: 0 1 1;
+    margin-right: 520px;
     font-size: 24px;
     font-weight: bolder;
-    color:#f9faf8;
+    color: #f9faf8;
 }
 
 .signup {
-    display: inline-flex;
-    flex: 0 1 0;
-    margin-top: 80px;
-    padding: 20px;
-    text-align: left;
-    color:#e5e7eb;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-content: center;
+    margin-top: 130px;
+    margin-bottom: 20px;
+    color: #e5e7eb;
 }
 
-.signup div {
-   flex: 1;
+.text {
+    padding: 0 10px 0 10px;
 }
 
 .signup button {
@@ -60,22 +55,158 @@ nav div {
     border-radius: 10px;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    color: #e5e7eb
+    color: #e5e7eb;
+    font-size: 18px;
 }
 
 .signup h1 {
     font-size: 48px;
-    font-weight: bold;
+    font-weight: 900;
+    margin-bottom: -10px;
 }
 
 .signup p {
     font-size: 18px;
     color: #e5e7eb;
+    text-align: left;
 }
 
 .signup .image {
     display: inline-flex;
-    background-color: rgba(128, 128, 128, 0.761);
+    background-color: rgba(130, 139, 144, 0.876);
     align-items: center;
     justify-content: center;
+    padding: 120px 150px 120px 150px;
+    margin-left: 80px;
+    font-size: 18px;
+}
+
+.container-two {
+    display: block;
+    justify-content: center;
+    align-items: flex-start;
+    height: 500px;
+    padding: 20px;
+    background-color: white;
+
+
+}
+
+.some-information {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+
+}
+
+.some-information h1 {
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900;
+}
+
+.info-images {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.info-images .item {
+    border: #3882f6;
+    border-style: solid;
+    height: 160px;
+    width: 160px;
+    margin: 30px;
+    border-radius: 15px;
+    border-width: 3.8px;
+}
+
+.info-images img {
+    height: 160px;
+    width: 160px;
+}
+
+.caption {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.container-three {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    padding-left: 15%;
+    padding-right: 15%;
+    height: 440px;
+    background-color: #e5e7eb;
+    gap: 20px;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1f2937;
+}
+
+.container-three figure {
+    flex: 1;
+    justify-content: center;
+    width: 850px;
+    margin: 120px;
+}
+
+.container-three figcaption {
+    text-align: right;
+    font-weight: 900;
+    font-size: 28px;
+    font-style: normal;
+    margin-top: -20px;
+}
+
+.container-four {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    padding: 20px;
+    background-color: white;
+}
+
+.call-to-action {
+    flex: 1 1 1;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+    width: 1100px;
+    background-color: #3882f6;
+    color: #f9faf8;
+    border-radius: 10px;
+}
+
+.call-to-action button {
+    flex: 1;
+    background-color: #3882f6;
+    padding: 8px 30px;
+    border: solid 2px;
+    border-color: #e5e7eb;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #e5e7eb;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+h2 {
+    margin-bottom: -15px;
+}
+
+.container-five {
+    display: flex;
+    background-color: #1f2937;
+    height: 120px;
+    font-size: 18px;
+    color: #e5e7eb;
+    justify-content: center;
+    align-items: center;
 }
